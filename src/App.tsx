@@ -1,18 +1,6 @@
 import { ProjectCard } from './components/ProjectCard'
 import { profile, projects } from './data/projects'
 
-const skills = [
-  'React',
-  'TypeScript',
-  'Vite',
-  'Redux Toolkit',
-  'TanStack Query',
-  'React Router',
-  'React Hook Form',
-  'Supabase',
-  'Tailwind CSS',
-]
-
 const year = new Date().getFullYear()
 
 function App() {
@@ -35,28 +23,16 @@ function App() {
       <main id="top">
         <section className="hero">
           <div className="hero-glow" aria-hidden />
-          <p className="eyebrow">
-            <span className="status-dot" /> {profile.role}
+          <h1 className="hero-title">{profile.name}</h1>
+          <p className="hero-intro">
+            {profile.role}. <em>{profile.focus}</em>
           </p>
-          <h1 className="hero-title">
-            Hi, I'm {profile.name}.
-            <br />
-            <em>I build things for the web.</em>
-          </h1>
-          <p className="hero-intro">{profile.intro}</p>
-          <div className="hero-actions">
-            <a className="btn btn--primary" href="#work">
-              See my work
-            </a>
-            <a className="btn btn--ghost" href={profile.github} target="_blank" rel="noreferrer">
+          <p className="hero-links">
+            <a href={profile.github} target="_blank" rel="noreferrer">
               GitHub ↗
             </a>
-          </div>
-          <ul className="skills" aria-label="Skills">
-            {skills.map((s) => (
-              <li key={s}>{s}</li>
-            ))}
-          </ul>
+            <a href={`mailto:${profile.email}`}>Email ↗</a>
+          </p>
         </section>
 
         <section id="work" className="work">

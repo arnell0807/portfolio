@@ -13,8 +13,7 @@ export type Project = {
 export const profile = {
   name: 'Arnell Daniel',
   role: 'Frontend Developer',
-  intro:
-    'I build fast, typed React apps with clean state management and real backends. Here are a few things I have shipped.',
+  focus: 'React, TypeScript, Supabase.',
   github: 'https://github.com/arnell0807',
   email: 'arnelldaniel8@gmail.com',
 }
