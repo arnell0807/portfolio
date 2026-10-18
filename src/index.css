@@ -208,17 +208,12 @@ main,
   font-size: clamp(2.25rem, 5vw, 3.5rem);
 }
 
-.section-head p {
-  margin: 0;
-  color: var(--muted);
-}
-
 .project {
   display: grid;
   grid-template-columns: 1.25fr 1fr;
   align-items: center;
   gap: 56px;
-  margin-bottom: 120px;
+  margin-bottom: 104px;
 }
 
 .project--reversed .project-media {
@@ -238,37 +233,10 @@ main,
   font-size: clamp(2.25rem, 4vw, 3.25rem);
 }
 
-.project-tagline {
-  margin: 8px 0 0;
-  color: var(--accent);
-  font-weight: 500;
-}
-
 .project-description {
-  margin: 16px 0 0;
+  margin: 14px 0 0;
   color: var(--muted);
-}
-
-.project-highlights {
-  display: grid;
-  gap: 8px;
-  margin-top: 20px;
-  font-size: 0.95rem;
-}
-
-.project-highlights li {
-  position: relative;
-  padding-left: 22px;
-}
-
-.project-highlights li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.62em;
-  width: 10px;
-  height: 2px;
-  background: var(--accent);
+  font-size: 1.05rem;
 }
 
 .project-stack {
@@ -399,24 +367,13 @@ main,
 
 /* Contact */
 .contact {
-  padding: 96px 0 120px;
+  padding: 72px 0 88px;
   text-align: center;
   border-top: 1px solid var(--border);
 }
 
-.contact h2 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-}
-
-.contact p {
-  margin: 16px auto 0;
-  max-width: 460px;
-  color: var(--muted);
-}
-
 .contact-email {
   display: inline-block;
-  margin-top: 32px;
   font-family: var(--serif);
   font-size: clamp(1.4rem, 4vw, 2.25rem);
   font-style: italic;
