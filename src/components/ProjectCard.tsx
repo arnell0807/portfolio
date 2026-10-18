@@ -23,14 +23,7 @@ export function ProjectCard({ project, index }: Props) {
       <div className="project-body">
         <span className="project-index">{String(index + 1).padStart(2, '0')}</span>
         <h3 className="project-name">{project.name}</h3>
-        <p className="project-tagline">{project.tagline}</p>
         <p className="project-description">{project.description}</p>
-
-        <ul className="project-highlights">
-          {project.highlights.map((h) => (
-            <li key={h}>{h}</li>
-          ))}
-        </ul>
 
         <ul className="project-stack" aria-label="Tech stack">
           {project.stack.map((tech) => (

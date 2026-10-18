@@ -38,7 +38,6 @@ function App() {
         <section id="work" className="work">
           <div className="section-head">
             <h2>Selected work</h2>
-            <p>{projects.length} projects, all deployed on Vercel</p>
           </div>
           {projects.map((project, i) => (
             <ProjectCard key={project.slug} project={project} index={i} />
@@ -46,8 +45,6 @@ function App() {
         </section>
 
         <section id="contact" className="contact">
-          <h2>Let's work together</h2>
-          <p>Have a project in mind or just want to say hi? My inbox is open.</p>
           <a className="contact-email" href={`mailto:${profile.email}`}>
             {profile.email}
           </a>
