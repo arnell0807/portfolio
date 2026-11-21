@@ -8,6 +8,10 @@ My personal portfolio, built with React, TypeScript and Vite. Each project card 
 - [Car Auction](https://carauction-ten.vercel.app/): car auction marketplace
 - [Cat Facts](https://catfacts-gamma.vercel.app/): random cat facts
 
+## Built with
+
+React, TypeScript and Vite. The previews are the live sites in iframes, rendered at desktop size and scaled down to fit each card.
+
 ## Run locally
 
 ```bash
