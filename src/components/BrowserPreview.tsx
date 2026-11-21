@@ -24,16 +24,8 @@ export function BrowserPreview({ url, title }: Props) {
     return () => observer.disconnect()
   }, [])
 
-  const host = new URL(url).host
-
   return (
     <div className="browser">
-      <div className="browser-bar">
-        <span className="dot" />
-        <span className="dot" />
-        <span className="dot" />
-        <span className="browser-url">{host}</span>
-      </div>
       <div
         ref={viewportRef}
         className="browser-viewport"
@@ -54,7 +46,7 @@ export function BrowserPreview({ url, title }: Props) {
           }}
         />
         <a className="browser-overlay" href={url} target="_blank" rel="noreferrer">
-          <span>Open live site ↗</span>
+          <span>Open live site</span>
         </a>
       </div>
     </div>

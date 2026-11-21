@@ -21,7 +21,6 @@ export function ProjectCard({ project, index }: Props) {
       </div>
 
       <div className="project-body">
-        <span className="project-index">{String(index + 1).padStart(2, '0')}</span>
         <h3 className="project-name">{project.name}</h3>
         <p className="project-description">{project.description}</p>
 

@@ -8,8 +8,7 @@ function App() {
     <>
       <header className="nav">
         <a href="#top" className="nav-logo">
-          {profile.name.split(' ')[0]}
-          <span>.</span>
+          {profile.name}
         </a>
         <nav className="nav-links">
           <a href="#work">Work</a>
@@ -22,22 +21,21 @@ function App() {
 
       <main id="top">
         <section className="hero">
-          <div className="hero-glow" aria-hidden />
           <h1 className="hero-title">{profile.name}</h1>
           <p className="hero-intro">
-            {profile.role}. <em>{profile.focus}</em>
+            {profile.role} · {profile.focus.replace(/\.$/, '')}
           </p>
           <p className="hero-links">
             <a href={profile.github} target="_blank" rel="noreferrer">
-              GitHub ↗
+              GitHub
             </a>
-            <a href={`mailto:${profile.email}`}>Email ↗</a>
+            <a href={`mailto:${profile.email}`}>Email</a>
           </p>
         </section>
 
         <section id="work" className="work">
           <div className="section-head">
-            <h2>Selected work</h2>
+            <h2>Projects</h2>
           </div>
           {projects.map((project, i) => (
             <ProjectCard key={project.slug} project={project} index={i} />
